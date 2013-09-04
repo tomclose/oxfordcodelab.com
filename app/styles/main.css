@@ -17,9 +17,9 @@ body {
 }
 
 #top {
-  background-image: url('../images/cfg1.jgp');
+  background-image: url('../images/cfg1.jpg');
 }
-
+/*
 #about {
   background-color: #5ed1ba;
 }
@@ -27,8 +27,8 @@ body {
 #content {
   background-color: #ffaa73;
 }
-
-@body-bg: #89ec6a;
+*/
+@body-bg: #fff;/*#89ec6a;*/
 @navbar-default-bg: #228d00;
 @navbar-default-color: #fff;
 @navbar-default-link-color: #fff;

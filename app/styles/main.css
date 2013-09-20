@@ -8,32 +8,82 @@
   padding: 0.2em 0; 
 }
 
-.jumbotron {
-  margin: 50px auto 0 auto;
+#top .jumbotron {
+  margin: 50px 0 50px 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+
+#top .jumbotron h1 {
+  font-family: 'exo';
+  font-size: 250%;
+}
+
+#top .jumbotron a.btn.btn-lg {
+  margin-top: 50px;
+  font-size: 150%;
+  font-weight: 'bold';
+  padding: 18px 28px;
+}
+
+#top .jumbotron h2 {
+  padding-bottom: 1em;
+  font-size: 150%;
+}
+
+@media screen and (min-width: 768px) {
+  #top .jumbotron h1 {
+    font-size: 500%;
+  }
+}
+
+#top .jumbotron h1.accent {
+  color: #c92A44;
 }
 
 body {
   padding-top: 40px;
 }
 
-#top {
-  background-image: url('../images/cfg1.jpg');
+#partners p.lead {
+  margin: 30px 0;
 }
+
+#top {
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 580px;
+}
+
+@media (max-width: 766px) {
+  #top {height: auto; }
+}
+
+#partners .row, #partners p.lead {
+  text-align: center;
+}
+
 /*
 #about {
   background-color: #5ed1ba;
 }
 
+
+
 #content {
   background-color: #ffaa73;
 }
 */
-@body-bg: #fff;/*#89ec6a;*/
-@navbar-default-bg: #228d00;
+/*@body-bg: #fff;    /*#89ec6a;*/
+/*@navbar-default-bg: #228d00;
 @navbar-default-color: #fff;
 @navbar-default-link-color: #fff;
 @navbar-default-link-active-color: #fff;
 
 @brand-success: #f30021;
 
-@font-family-base: 'exo';
+@font-family-base: 'exo';*/

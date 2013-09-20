@@ -9,6 +9,7 @@ task :deploy do
   raise unless system "git commit -m 'Publish site'"
   puts "git push -f origin"
   raise unless system "git push -f origin"
+ensure
   puts "git checkout master"
   raise unless system "git checkout master"
 end

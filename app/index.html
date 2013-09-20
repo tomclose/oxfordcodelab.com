@@ -12,8 +12,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!--- <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+  <script src='js/modernizr.js'></script>
 </head>
 <body>
   <!-- Fixed navbar -->
@@ -29,93 +30,141 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#content">Content</a></li>
-          <li><a href="#stories">Stories</a></li>
-          <li><a href="#partners">Partners</a></li>
+          <li><a href="#partners">FAQs</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
+
   <section id='top'>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Learn to code</h1>
-        <h2>Why not!</h2>
+      <div class="jumbotron no-padding">
+
+        <h1>Make an impact.</h1>
+        <h1 class='accent'>Learn to code.</h1>
+        <!-- <h2>A hands-on introduction to web coding.</h2> -->
 
 
-        <p><a class='btn btn-lg btn-success'>Sign up today!</a></p>
+        <p><a class='btn btn-lg btn-success'>Apply today!</a></p>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id='partners'>
-    <div class='container'>
-      In collaboration with
-      <div row='row'>
-        <div class='col-md-3'>
-          <h2>The Shed</h2>
+    <section id='partners'>
+
+      <div class="container">
+        <p class="lead">In association with</p>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <img src='images/the_shed.png' alt='The Shed'>
+          </div>
+          <div class='col-sm-6'>
+
+            <img src='images/cfg_logo.png' alt='CodeFirst: Girls'>
+          </div>
         </div>
-        <div class='col-md-3'>
-          <h2>Entrepreneur First</h2>
+
+        <p class="lead">Learn to code courses in London cost £1000s. We've teamed up with the Shed and CodeFirst: Girls to offer this course to you for free.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id='faqs'>
+      <div class="container">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  How much does it cost?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>The course is completely free for Oxford University students.</p>
+
+                <p>In the first few weeks you will be required to buy a domain name, as part of one of the exercises. This will cost a couple of pounds and is the only thing you will be required to buy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  How much does it cost?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>The course is completely free for Oxford University students.</p>
+
+                <p>In the first few weeks you will be required to buy a domain name, as part of one of the exercises. This will cost a couple of pounds and is the only thing you will be required to buy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  When will it run?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  How many places are there?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div class='col-md-3'>
-          <h2>White October</h2>
-        </div>
-        <div class='col-md-3'>
-          <h2>Code61</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                Is it just for girls?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <ul>
-      <li></li>
+    <div class='container'>
+      <blockquote>
+        <p>The programmers of tomorrow are the wizards of the future. You're going to look like you have magic powers compared to everybody else.</p>
+        <small>Gabe Newell, Founder and President, Valve</small>
+      </blockquote>
+    </div>
 
-    </ul>
+  </div>
 
-    <section id='about'>
-      <div class='container'>
-        <div row='row'>
-          <div class='col-md-4'>
-            <h2>Learn</h2>
-          </div>
-          <div class='col-md-4'>
-            <h2>Build</h2>
-          </div>
-          <div class='col-md-4'>
-            <h2>Create</h2>
-          </div>
-        </div>
-      </section>
-
-      <section id='courses'>
-        <div class='container'>
-          <div class='container'>
-            <div row='row'>
-              <div class='col-md-4'>
-                <h2>Web programming 1</h2>
-              </div>
-              <div class='col-md-4'>
-                <h2>Web programming 2</h2>
-              </div>
-              <div class='col-md-4'>
-                <h2>Web programming 3</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section id='join'>
-          <div class='container'>
-            <form>
-              <label for='email'>Email</label>
-              <input name='email' type='text'>
-              <input type='submit'>
-            </form>
-          </div>
-        </section>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -131,17 +180,20 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
       </script>
 
-<!-- hi -->
+      <!-- hi -->
       <!-- build:js scripts/main.js -->
+      <!--
       <script src="bower_components/jquery/jquery.js"></script>
       <script src="scripts/main.js"></script>
       <script src="scripts/hello.js"></script>
       <!-- endbuild -->
 
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
       <!-- build:js scripts/vendor/bootstrap.js -->
 
       <!-- endbuild -->
       <!-- livereload -->
       <script src="http://localhost:35729/livereload.js"></script>
     </body>
-</html>
+    </html>

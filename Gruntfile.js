@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         ]
       },
     },
-    clean: ['dist/'],
+    clean: ['dist/', '!dist/.git'],
     less: {
       files: {
         expand: true,

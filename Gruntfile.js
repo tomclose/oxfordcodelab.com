@@ -29,7 +29,12 @@ module.exports = function(grunt) {
         ]
       },
     },
-    clean: ['dist/', '!dist/.git'],
+    clean: {
+      all: ['dist/**',
+            '!dist',
+            '!dist/.git',
+            '!dist/.git/**'],
+          },
     less: {
       files: {
         expand: true,
@@ -55,6 +60,7 @@ module.exports = function(grunt) {
         files: ['dist/**/*'],
       },
     },
+
   });
 
   // Load the plugin that provides the "uglify" task.
